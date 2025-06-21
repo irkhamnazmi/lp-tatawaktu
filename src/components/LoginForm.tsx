@@ -1,10 +1,10 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Eye, EyeOff, Mail, Lock } from 'lucide-react';
+import LoginIllustration from './LoginIllustration';
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -28,6 +28,7 @@ const LoginForm = () => {
 
       <Card className="w-full max-w-md relative z-10 bg-white/20 backdrop-blur-lg border-white/30 shadow-xl">
         <CardHeader className="text-center space-y-2">
+          <LoginIllustration />
           <CardTitle className="text-3xl font-bold text-white">
             Selamat Datang
           </CardTitle>
